@@ -490,7 +490,7 @@ input {
 }
 .footer-big{
     /* background-color: gold; */
-    height: auto;
+    height: 350px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
