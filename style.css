@@ -1,0 +1,1007 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    /* background-color: rebeccapurple; */
+}
+
+.navbar {
+    background-color: bisque;
+    height: 100px;
+    width: 100%;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+.nav {
+    /* background-color: rebeccapurple; */
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.hover-effect {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.dropdown {
+    background-color: white;
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 45px;
+    left: -30px;
+    border: 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+    z-index: 99;
+}
+
+.dropdown-list {
+    margin: 20px 0px !important;
+    letter-spacing: 0.3px;
+}
+
+.hover-effect:hover {
+    .dropdown {
+        display: inline-block;
+    }
+}
+
+/* =========Home-her0 section========= */
+
+#home-hero {
+    /* background-color: gray; */
+    height: 680px;
+    width: 100%;
+    background-image: url(./assets/hero_bg_1.jpg);
+       background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: saturate(0.7);
+}
+
+.home-contain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.text-part {
+    width: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    /* background-color: yellow; */
+}
+
+.text-part h1 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.text-part span {
+    font-weight: bold;
+}
+
+.text-part p {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    background-color: white;
+    width: 450px;
+    padding: 25px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 240px;
+}
+
+.form-container p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    height: 55px;
+    margin-bottom: 22px;
+    padding: 15px;
+    font-size: 17px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    background-color: bisque;
+}
+
+/* ======= practice area ===== */
+#practice-area {
+    background-color: #f8f9fa;
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+
+.area-heading {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.area-heading h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: rgb(148, 147, 147);
+}
+
+.area-heading h1 span {
+    font-weight: bold;
+    color: black;
+}
+
+.area-heading p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.practice-content {
+    /* background-color: bisque; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    grid-auto-columns: 350px;
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+}
+
+.practice-card {
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: bisque;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.circle i {
+    font-size: 50px;
+}
+
+.practice-card h4 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.practice-card p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+#doller-icon {
+    font-size: 25px;
+    position: absolute;
+    top: 23px;
+    left: 18px;
+    color: white;
+}
+
+
+/* ======= book-appoinment ===== */
+#book-appoinment{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+.appoinment-contain{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+.first-contain{
+    /* background-color: rebeccapurple; */
+    width: 50%;
+    height: 400px;
+}
+.second-contain{
+    /* background-color: aqua; */
+    height: 400px;
+    width: 40%;
+    padding: 50px 75px;
+    box-sizing: border-box;
+}
+.left-box{
+    float: left;
+    height: 100%;
+    width: 48%;
+    /* background-color: red; */
+    margin-right: 4%;
+}
+.right-box{
+    float: left;
+    height: 100%;
+    width: 48%;
+    /* background-color: blue; */
+}
+.second-contain h1{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.second-contain span{
+    font-weight: bold;
+}
+.second-contain p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.second-contain button{
+    padding: 15px 30px;
+    text-align: center;
+    background-color: bisque;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+}
+
+/* ===== customer-review ===== */
+#customer-review{
+    height: auto;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+.review-heading{
+   margin-bottom: 20px;
+}
+.review-heading h1{
+    font-size: 35px;
+    text-align: center;
+}
+.review-cards{
+    /* background-color: goldenrod; */
+    height: 100%;
+    width: 100%;
+    padding:30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 260px;
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+}
+.card-box{
+    background-color: #f8f9fa;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.card-title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.profile-circle{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: burlywood;
+}
+.profile-circle img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.title-name h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+.title-name p{
+    font-size: 19px;
+    margin-left: 10px;
+    color: grey;
+}
+.card-content p{
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+
+/* ======= solution section ====== */
+#solution-section{
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+.solution-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-section{
+    height: 500px;
+    width: 30%;
+}
+.middle-section{
+    height: 500px;
+    width: 35%;
+    padding-inline: 30px;
+    box-sizing: border-box;
+}
+.right-section{
+    height: 500px;
+    width: 35%;
+    padding-inline: 20px;
+    box-sizing: border-box;
+}
+.middle-section h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.middle-section span{
+    font-weight: bold;
+}
+.middle-section p{
+    font-size: 18px;
+   margin-bottom: 25px;
+    line-height: 28px;
+    color: #888
+}
+.middle-section ul li{
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.middle-section ul li i{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.question{
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #e2e8e8;
+    box-sizing: border-box;
+}
+.question p{
+    font-size: 20px;
+}
+.answer-text{
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #888;
+    border-radius: 7px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.answer-text p{
+   font-size: 20px;
+    line-height: 25px;
+}
+
+/* ==== footer-section ===== */
+#footer{
+    height: auto;
+    width: 100%;
+    /* background-color: aqua; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(./assets/hero_bg_1.jpg);
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+     filter: saturate(0.7);
+}
+.footer-big{
+    /* background-color: gold; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid whitesmoke;
+}
+.left-content{
+    /* background-color: green; */
+    height: 100%;
+    width: 30%;
+    padding-right: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.left-content h3{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #f8f9fa;
+}
+.left-content p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+    color: white;
+}
+.footer-circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    background-color: #fee2b3;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.footer-circle i{
+    font-size: 18px;
+    color: whitesmoke;
+}
+.right-content{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: blueviolet; */
+    height: 100%;
+    width: 70%;
+}
+.footer-link{
+    height: 100%;
+    width: 25%;
+    /* background-color: red; */
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.footer-link h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #f8f9fa;
+}
+.footer-link li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.footer-link li a{
+    color: #888;
+}
+.footer-small{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.footer-small p{
+    font-size: 20px;
+    color: #f8f9fa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @Mobile view */
+
+@media screen and (max-width:650px) {
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .navbar {
+        position: relative;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .nav {
+        width: 100%;
+        margin: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /* ======home-hero===== */
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .home-contain {
+        flex-direction: column;
+    }
+
+    .text-part {
+        width: 420px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    .text-part h1 {
+        font-size: 55px;
+    }
+
+    .text-part p {
+        font-size: 22px;
+        padding-right: 15px;
+    }
+
+    .form-container {
+        position: absolute;
+        top: 325px;
+        right: 20px;
+        width: 365px;
+    }
+
+    #home-hero {
+        background-size: 300% 150%;
+        background-position: left;
+    }
+
+    /* ====== practice-area ====== */
+    #practice-area{
+        padding-bottom: 50px;
+    }
+    .area-heading {
+        padding: 20px;
+    }
+    .area-heading p {
+        font-size: 20px;
+    }
+    .practice-content {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 275px;
+        grid-auto-columns: 350px;
+        grid-column-gap: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    .practice-card {
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .circle {
+        height: 60px;
+        width: 60px;
+        background-color: bisque;
+        border-radius: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .circle i {
+        font-size: 55px;
+    }
+    .practice-card h4 {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .practice-card p {
+        font-size: 19px;
+        line-height: 25px;
+    }
+    #doller-icon {
+        top: 25px;
+        left: 22px;
+    }
+    /* ======= book-appoinment ===== */
+    #book-appoinment{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .appoinment-contain{
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    .first-contain{
+        width: 100%;
+        height: 250px;
+    }
+    .second-contain{
+        width: 100%;
+        padding: 20px 15px;
+    }
+    .second-contain p{
+        font-size: 19px;
+    }
+
+    /* ==== customer-review ===== */
+    
+    #customer-review{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+    }
+    .review-cards{
+        grid-template-columns: 1fr;
+    }
+    .card-content p{
+        font-size: 19px;
+        padding-right: 0px;
+    }
+
+    /* ======= solution section ====== */
+    .solution-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.left-section{
+    width: 100%;
+}
+.middle-section{
+   width: 100%;
+   padding-inline: 0px;
+   padding-top: 10px;
+   box-sizing: border-box;
+}
+.right-section{
+   width: 100%;
+   padding-inline: 0px;
+
+}
+.middle-section h1{
+    font-size: 35px;
+}
+.middle-section p{
+        font-size: 20px;
+        line-height: 30px;
+}
+.answer-text p{
+   font-size: 20px;
+    line-height: 30px;
+}
+.question p{
+    font-size: 19px;
+}
+
+/* ===== footer ===== */
+#footer{
+    height: auto;
+    padding-bottom: 0px;
+    padding-top: 50px;
+     background-size: 500% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-big{
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 100px;
+    }
+    .left-content{
+        width: 100%;
+      padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    }
+.right-content{
+    width: 100%;
+    flex-direction: column;
+}
+.footer-link{
+    width: 100%;
+}
+.footer-small{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+}
+
+/* @tablet view */
+
+@media screen and (min-width:680px) and (max-width:980px) {
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container {
+        height: 100%;
+        width: 90%;
+        margin: auto;
+    }
+
+    /* ======home-hero===== */
+    #home-hero {
+        height: 1100px;
+        width: 100%;
+        background-image: url(./assets/hero_bg_1.jpg);
+        background-size: 300% 150%;
+        filter: saturate(0.7);
+    }
+
+    .home-contain {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 300px;
+        box-sizing: border-box;
+    }
+
+    .text-part {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    .text-part h1 {
+        font-size: 75px;
+    }
+
+    .text-part p {
+        font-size: 26px;
+    }
+
+    .form-container {
+        width: 90%;
+        top: 600px;
+        left: 35px;
+    }
+
+     /* ====== practice-area ====== */
+     .practice-content{
+        grid-template-columns: 1fr;
+          grid-auto-rows: 220px;
+          padding-top: 30px;
+          box-sizing: border-box;
+     }
+
+      /* ======= book-appoinment ===== */
+
+     .appoinment-contain{
+        flex-direction: column;
+    }
+    .first-contain{
+        width: 100%;
+        height: 500px;
+    }
+    .second-contain{
+        height: auto;
+        width: 100%;
+        padding: 20px 0px;
+    }
+    .second-contain h1{
+        font-size: 30px;
+    }
+    .second-contain p{
+        font-size: 25px;
+    }
+    .second-contain button{
+        font-size: 18px;
+    }
+
+    /* ===== custoemr-review ==== */
+    .review-cards{
+                grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 300px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .card-content p{
+        padding-right: 0px;
+        font-size: 24px;
+    }
+
+    /* ======= solution section ====== */
+    .left-section{
+    width: 50%;
+}
+.middle-section{
+   width: 50%;
+   padding-right: 0px;
+}
+
+.right-section{
+   width: 100%;
+
+}
+.middle-section h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.middle-section p{
+    font-size: 20px;
+    line-height:25px;
+}
+.right-section{
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+/* ===== footer===== */
+#footer{
+    height: auto;
+    padding-bottom: 0px;
+    padding-top: 50px;
+     background-size: 500% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-big{
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 100px;
+    }
+    .left-content{
+        width: 100%;
+      padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    }
+.right-content{
+    width: 100%;
+    flex-direction: column;
+}
+.footer-link{
+    width: 100%;
+}
+.footer-small{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+}
+
+/* @desktop laptop view */
+
+@media screen and (min-width:980px) and (max-width:1280px) {
+    .nav {
+        height: 100%;
+        width: 90%;
+        margin: auto;
+    }
+
+    .container {
+        height: 100%;
+        width: 90%;
+        margin: auto;
+    }
+
+    .text-part {
+        width: 600px;
+    }
+
+    .text-part h1 {
+        font-size: 55px;
+    }
+
+    .text-part p {
+        font-size: 20px;
+    }
+
+    .form-container {
+        width: 400px;
+        top: 90px;
+        right: 60px;
+    }
+
+    /* ===== customer-review ==== */
+    .review-cards{
+        grid-auto-rows: 300px;
+    }
+}
